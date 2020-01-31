@@ -64,6 +64,7 @@ function check_links() {
   local _inp_file="$1"
   while read -r _line; do
     if [ "$_line" == "" ]; then
+      # @TODO check if relative path with #, open that file and ensure a h with id #hash-value exists.
       continue
     fi
     # Notify of check
